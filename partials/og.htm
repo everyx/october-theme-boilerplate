@@ -1,0 +1,11 @@
+{##}
+{# Facebook Open Graph: http://ogp.me/ #}
+
+{% if fb_app_id is not empty %}<meta property="fb:app_id" content="{{ fb_app_id }}">{% endif %}
+<meta property="og:type" content="website">
+{% if og.url is not empty %}<meta property="og:url" content="{{ og.url }}">{% endif %}
+{% if og.title is not empty %}<meta property="og:title" content="{{ og.title }}">{% endif %}
+{% if og.description is not empty %}<meta property="og:description" content="{{ og.description }}" /> {% endif %}
+{% if og.site_name is not empty %}<meta property="og:site_name" content="{{ og.site_name }}">{% endif %}
+{% for image in og.images %}<meta property="og:image" content="{{ image }}">{% endif %}{% endfor %}
+{% for video in og.videos %}<meta property="og:video" content="{{ video }}">{% endif %}{% endfor %}

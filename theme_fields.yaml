@@ -1,0 +1,58 @@
+# fields:
+
+# tabs:
+#   fields:
+#     site_name:
+#       tab: 基本设置
+#       type: text
+#       label: 网站名
+#       span: left
+#       comment: 修改此项会修改标题中的站点名称
+#       default: "AOKE"
+
+#     # Google Tag Manager
+#     tgm_enable:
+#       tab: 基本设置
+#       label: 启用 Google Tag Manager
+#       type: switch
+#     gtm_id:
+#       tab: 基本设置
+#       label: GTM ID
+#       cssClass: field-indent
+#       size: tiny
+#       type: text
+#       span: left
+#       trigger:
+#         action: show
+#         field: tgm_enable
+#         condition: checked
+
+#     # open graph config
+#     og_tag_enable:
+#       tab: 基本设置
+#       label: 使用 Open Graph 标签
+#       type: switch
+#     fb_app_id:
+#       tab: 基本设置
+#       label: Facebook App ID
+#       cssClass: field-indent
+#       size: tiny
+#       type: text
+#       span: left
+#       trigger:
+#         action: show
+#         field: og_tag_enable
+#         condition: checked
+#     og_image_default:
+#       tab: 基本设置
+#       label: og:img 默认图片 (1000x1000px)
+#       span: right
+#       type: mediafinder
+#       mode: image
+#       imageWidth: 100
+#       imageHeight: 100
+#       cssClass: field-indent
+#       trigger:
+#         action: show
+#         field: og_tag_enable
+#         condition: checked

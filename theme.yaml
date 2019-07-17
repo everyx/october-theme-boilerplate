@@ -1,0 +1,9 @@
+name: Aoke Elec 2019
+author: Fengsi Network Technology Co., Ltd.
+homepage: https://fengsi.io
+description: Theme for Aoke Electronic, made with love by fengsi.io
+previewImage: assets/dist/img/preview.png
+code: aoke2019
+form: theme_fields.yaml
+require:
+    - Ompmega.MixHelper # for Laravel mix twig tag

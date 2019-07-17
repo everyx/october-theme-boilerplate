@@ -1,0 +1,34 @@
+==
+{##}
+<!doctype html>
+<html class="no-js" lang="en" prefix="og: http://ogp.me/ns#">
+
+<head>
+  {% if this.theme.gtm_enable %}
+    {% partial 'gtm' gtm_id=this.theme.gtm_id %}
+  {% endif %}
+  <meta charset="utf-8">
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="{{ 'assets/site.webmanifest' | theme }}">
+  <meta name="msapplication-config" content="{{ 'assets/site.ieconfig' | theme }}" />
+  <link rel="apple-touch-icon" href="{{ 'assets/dist/img/icon.png' | theme }}">
+  <link rel="icon" type="image/png" href="{{ 'assets/dist/img/icon.png' | theme }}" />
+
+  <link rel="stylesheet" href="{{ mix('/dist/css/main.css') }}">
+
+  <meta name="theme-color" content="#fafafa">
+  {% if this.theme.og_tag_enable %}
+    {% partial 'og' fb_app_id=fa_app_id og=og %}
+  {% endif %}
+</head>
+
+<body>
+  {% page %}
+
+  <script src="{{ mix('/dist/js/main.js') }}"></script>
+</body>
+
+</html>
